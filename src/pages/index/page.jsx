@@ -58,7 +58,7 @@ export default function Page() {
             <SactionNumbers/>
             <Service/>
             <div className="bg-primary ">
-                <div className=" flex flex-col lg:flex-row items-center justify-center gap-14  p-6 container mx-auto">
+                <div className=" flex flex-col lg:flex-row items-center justify-center gap-14  p-6 py-10 container mx-auto">
                     <div className=" relative h-[40rem]   flex items-center justify-center  ">
                         {
                             Images.map((ele,index)=>(
@@ -66,8 +66,8 @@ export default function Page() {
                             ))
                         }
                     </div>
-                    <div className=" lg:w-1/2 font-chillax flex flex-col gap-6 text-white   lg:px-0">
-                        <h2 className=" text-3xl lg:text-5xl  mb-4 font-zodiak text-white uppercase">À propos de la Clinique Chifa tasnime  </h2>
+                    <div className=" lg:w-1/2 font-chillax flex flex-col gap-4 text-white ">
+                        <h2 className=" text-2xl text-center lg:text-left lg:text-4xl font-medium  mb-4 font-zodiak text-white uppercase">À propos de la Clinique Chifa tasnime  </h2>
                         <p className=" text-sm lg:text-base">À la Clinique Chifa tasnime, nous mettons votre santé au cœur de nos priorités. Située au centre de Marrakech, notre clinique moderne combine des installations de pointe avec une équipe de professionnels passionnés. Nous sommes dédiés à fournir des soins personnalisés et multidisciplinaires pour répondre à vos besoins de santé dans un environnement chaleureux et sûr.</p>
                         <p className=" text-sm lg:text-base">Depuis notre création, nous nous engageons à établir un nouveau standard en matière de soins de santé dans la région, en adoptant une approche humaine et innovante. Que ce soit pour des soins préventifs, des traitements spécialisés ou des urgences, nous sommes là pour vous accompagner à chaque étape de votre parcours de santé.</p>
                         <h3 className=" font-bold text-2xl ">Points clés :</h3>
