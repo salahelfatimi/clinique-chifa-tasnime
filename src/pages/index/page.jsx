@@ -57,7 +57,6 @@ export default function Page() {
             <LogoScroll/>
             <SactionNumbers/>
             <Service/>
-            
             <div className="bg-primary ">
                 <div className=" flex flex-col lg:flex-row items-center justify-center gap-14  p-6 container mx-auto">
                     <div className=" relative h-[40rem]   flex items-center justify-center  ">
