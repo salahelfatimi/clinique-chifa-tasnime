@@ -88,7 +88,7 @@ export default function Page() {
             <ServicesMedicaux/>
             <Avis/>
             <div className="relative  ">
-                <Image src={'/img/index/img.jpg'} width={1920} height={1080} className=" absolute top-0 left-0 w-full h-full object-cover inset-0" alt="la Clinique Chifa tasnime" title="la Clinique Chifa tasnime"/>
+                <Image src={'/img/index/img_1.jpg'} width={1920} height={1080} className=" absolute top-0 left-0 w-full h-full object-cover inset-0" alt="la Clinique Chifa tasnime" title="la Clinique Chifa tasnime"/>
                 <div className="absolute top-0 left-0 w-full h-full bg-black z-10 opacity-60 "></div>
                 <div className=" relative z-20 flex flex-col  container mx-auto gap-6 py-10 px-5 ">
                     <h2 className="text-4xl lg:text-6xl text-center font-zodiak text-white">Comment prendre rendez-vous à la Clinique Chifa Tasnime ?</h2>

@@ -30,13 +30,13 @@ export default function Navbar() {
     }, []);
 
     const ItemsNavbar = [
-        { name: 'Accueil', link: '#' },
+        { name: 'Accueil', link: '/' },
         { name: 'Nos Services', link: '#' },
         { name: 'Conseils Santé', link: '#' },
-        { name: 'À propos', link: '#' },
+        { name: 'À propos', link: '/a-propos' },
         // { name: 'Testimonials', link: '/testimonials' },
-        { name: 'FAQ', link: '#' },
-        { name: 'Contactez-nous', link: '#' },
+        { name: 'FAQ', link: '/foire-aux-questions' },
+        { name: 'Contactez-nous', link: '/contactez-nous' },
 
     ];
 

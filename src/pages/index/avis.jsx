@@ -1,3 +1,4 @@
+"use client" 
 import { testimonials } from "@/app/data/avis";
 import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
