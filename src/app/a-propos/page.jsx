@@ -16,15 +16,15 @@ export default function Page() {
 
                 </div>
             </div>
-            <div className=" h-screen flex flex-row justify-between   ">
-                <div className=" w-1/2">
-                    <Image src={`/img/a-propos/img_1.jpg`} alt="clinique chifa tasnime" title="clinique chifa tasnime" className={` object-cover h-full w-full  `} width={1920} height={1080}/>
+            <div className=" min-h-screen flex flex-col lg:flex-row justify-between   ">
+                <div className=" lg:w-1/2">
+                    <Image src={`/img/a-propos/img_1.jpg`} alt="clinique chifa tasnime" title="clinique chifa tasnime" className={` object-cover h-[50rem] w-full  `} width={1920} height={1080}/>
                 </div>
-                <div className=" bg-background  w-1/2 flex flex-col justify-center items-start z-20 gap-4 max-w-7xl container mx-auto p-10">
-                    <h2 className=" text-white font-chillax text-4xl font-bold">Notre vision</h2>
-                    <p className=" font-chillax text-white ">Être un pilier de la santé privée à Marrakech, en mettant l’humain au cœur de chaque soin, tout en développant des pratiques médicales modernes et responsables.</p>
-                    <h2 className=" text-white font-chillax text-4xl font-bold">Nos engagements à Marrakech</h2>
-                    <ul className=" font-chillax list-inside space-y-4 text-start list-disc text-white">
+                <div className=" bg-background  lg:w-1/2 flex flex-col justify-center items-start z-20 gap-4 max-w-7xl container mx-auto p-10">
+                    <h2 className=" text-white font-chillax text-2xl lg:text-4xl  font-bold">Notre vision</h2>
+                    <p className=" font-chillax text-white text-sm lg:text-base">Être un pilier de la santé privée à Marrakech, en mettant l’humain au cœur de chaque soin, tout en développant des pratiques médicales modernes et responsables.</p>
+                    <h2 className=" text-white font-chillax text-2xl lg:text-4xl font-bold">Nos engagements à Marrakech</h2>
+                    <ul className=" font-chillax list-inside space-y-4 text-start text-sm lg:text-base list-disc text-white">
                         <li>Excellence médicale et innovation continue</li>
                         <li>Accueil chaleureux et écoute active</li>
                         <li>Respect de l’éthique et confidentialité des patients</li>

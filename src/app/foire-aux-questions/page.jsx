@@ -13,13 +13,13 @@ export default function Page() {
                     <h1 className=" text-center">Foire Aux Questions (FAQ) – Clinique Chifa Tasnime</h1>
                 </div>
             </div>
-            <div className="flex flex-col gap-2 items-center justify-center  bg-background py-10">
+            <div className="flex flex-col gap-2 items-center justify-center  bg-background py-10 px-6">
                 <h3 className="text-lg lg:text-4xl font-zodiak font-medium text-white">Vous avez d'autres questions ?</h3>
-                <p className="text-sm lg:text-base font-chillax text-white">N’hésitez pas à nous contacter via notre page <Link href='/contactez-nous' className=" underline underline-offset-4 animate-pulse">Contactez-nous</Link> pour toute information complémentaire. Notre équipe se fera un plaisir de vous répondre.</p>
+                <p className="text-sm lg:text-base font-chillax text-white text-center">N’hésitez pas à nous contacter via notre page <Link href='/contactez-nous' className=" underline underline-offset-4 animate-pulse">Contactez-nous</Link> pour toute information complémentaire. Notre équipe se fera un plaisir de vous répondre.</p>
             </div>
             <div>
                 <div className="container mx-auto p-4 py-16 max-w-7xl">
-                    <div className="grid grid-cols-2 justify-center gap-6">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 justify-center gap-6">
                         {/* Map through the FAQ data here */}
                         {Faq.map((item, index) => (
                             <div key={index} className="flex flex-col gap-2 items-center justify-center bg-background p-4 rounded-4xl ">
