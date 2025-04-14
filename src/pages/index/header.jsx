@@ -15,7 +15,7 @@ export default function Header() {
                         Votre <span className=" text-primary">santé</span> , notre <span className=" text-primary">priorité</span> - Des soins spécialisés <span className=" text-primary">24h/24</span> et <span className=" text-primary">7j/7</span>  à Marrakech                    
                     </h1>
                     <div className="flex flex-col lg:flex-row gap-2 items-center justify-center">
-                        <Link href={'#'} className={`bg-primary rounded-full font-chillax font-medium hover:bg-white hover:text-primary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>
+                        <Link href={'/prendre-rendez-vous'} className={`bg-primary rounded-full font-chillax font-medium hover:bg-white hover:text-primary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>
                             Prendre rendez-vous                        
                         </Link>
                         {/* <Link href={'#'} className={`bg-secondary rounded-full font-chillax font-medium hover:bg-white hover:text-secondary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>

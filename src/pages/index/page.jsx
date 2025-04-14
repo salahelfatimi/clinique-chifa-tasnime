@@ -11,6 +11,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef, useState } from "react";
 import LogoScroll from "@/tools/logoScroll"
+import Link from "next/link"
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Page() {
@@ -77,7 +78,7 @@ export default function Page() {
                             <li><strong>Localisation idéale :</strong> Facilement accessible avec des zones dédiées aux urgences et aux consultations.</li>
                             
                         </ul>
-                        <button className=" bg-white py-3 px-6 font-medium text-background rounded-full w-fit">En savoir plus sur notre histoire</button>
+                        <Link href={'/a-propos'} className=" bg-white hover:bg-primary border-2 border-white hover:text-white hover:border-white duration-700 py-3 px-6 font-medium text-background rounded-full w-fit">En savoir plus sur notre histoire</Link>
                     </div>
                 </div>
             </div> 

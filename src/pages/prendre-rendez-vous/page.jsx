@@ -7,14 +7,14 @@ export default function Prendre_rendez_vous_page(){
                     <p className=" text-center text-white font-chillax">Remplissez le formulaire ci-dessous et nous vous contacterons pour confirmer votre rendez-vous.</p>
                     <div className=" flex flex-col lg:flex-row justify-center items-center gap-10 w-full ">
                         <div className=" flex flex-col items-start gap-4 w-full">
-                            <div className=" flex flex-row justify-between items-center gap-4 w-full">
+                            <div className=" flex flex-col lg:flex-row justify-between items-center gap-4 w-full">
                                 <input type="text" name="fullName" id="" className=" border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax" placeholder="Nom complet" />
                                 <input type="text" name="email" id="" className=" border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax" placeholder="Email"/>
                             </div>
                             <input type="text" name="phone" id="" className=" border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax" placeholder="Numéro de téléphone"/>
                             <input type="email" name="email" id="" className=" border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax" placeholder="E-mail"/>
-                            <div className=" flex flex-row justify-between items-center gap-4 w-full">
-                                <select name="" id="" className=" border-2 border-primary w-full h-12 rounded-4xl pl-6 text-white font-chillax  bg-background">
+                            <div className=" flex flex-col lg:flex-row justify-between items-center gap-4 w-full">
+                                <select name="" id="" className=" border-2 border-primary w-full h-12 rounded-4xl px-6 text-white font-chillax  bg-background">
                                     <option value="" selected>Select Service</option>
                                     <option value="Chirurgie">Chirurgie</option>
                                     <option value="Cardiologie et Rythmologie">Cardiologie et Rythmologie</option>
