@@ -31,7 +31,7 @@ export default function Navbar() {
 
     const ItemsNavbar = [
         { name: 'Accueil', link: '/' },
-        { name: 'Nos Services', link: '#' },
+        { name: 'Specialites', link: '/specialites' },
         { name: 'Conseils Santé', link: '#' },
         { name: 'À propos', link: '/a-propos' },
         // { name: 'Testimonials', link: '/testimonials' },

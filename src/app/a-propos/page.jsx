@@ -1,6 +1,7 @@
 import ImageScroll from "@/pages/a-propos/imageScroll";
 import Avis from "@/pages/index/avis";
 import Faq from "@/pages/index/faq";
+import SactionNumbers from "@/pages/index/sactionNumbers";
 import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 
@@ -37,6 +38,7 @@ export default function Page() {
             </div>
             <LogoScroll/>
             <ImageScroll/>
+            <SactionNumbers/>
             <Avis/>           
            
            
