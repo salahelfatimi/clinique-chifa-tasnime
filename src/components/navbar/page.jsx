@@ -52,7 +52,7 @@ export default function Navbar() {
                                 </Link>
                             ))}
                         </ul>
-                    <Link href={'#'} className=" bg-primary hover:bg-white border-2 border-primary  hover:text-primary duration-700 text-white px-4 text-sm py-3 font-chillax rounded-full capitalize">Prendre rendez-vous</Link>
+                    <Link href={'/prendre-rendez-vous'} className=" bg-primary hover:bg-white border-2 border-primary  hover:text-primary duration-700 text-white px-4 text-sm py-3 font-chillax rounded-full capitalize">Prendre rendez-vous</Link>
                 </div>
             </div>
         </header>

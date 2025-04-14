@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Contact() {
     return(
-        <div className="relative min-h-screen flex flex-col  justify-start overflow-hidden  ">
+        <div className="relative min-h-screen flex flex-col  justify-start overflow-hidden   ">
             <div className="absolute top-0 h-20 left-0 w-full  bg-background "></div>
             <iframe className=" pt-20 w-screen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4144.423258284018!2d-8.011837503210488!3d31.635952400000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee896b3f423b%3A0xe28965caaabd4148!2sClinique%20Chifa%20Marrakech!5e1!3m2!1sen!2sma!4v1744363623829!5m2!1sen!2sma" width="1920" height="600" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             <div className="p-4">
