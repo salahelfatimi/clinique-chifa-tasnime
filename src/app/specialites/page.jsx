@@ -1,6 +1,9 @@
 import Image from "next/image";
 import { PageService } from "../data/pageService";
 import Link from "next/link";
+import Avis from "@/pages/index/avis";
+import LogoScroll from "@/tools/logoScroll";
+import React from "react";
 
 export default function Nos_services(){
     return(
@@ -26,14 +29,14 @@ export default function Nos_services(){
                                 <div className="flex flex-col gap-6 lg:w-1/2 p-8">
                                     <h3 className=" text-2xl lg:text-4xl uppercase font-zodiak text-center mb-4 text-white">  {item.title}</h3>
                                     <p className="text-white text-center font-chillax">{item.description}</p>
-                                    <Link href={'#'} className=" bg-white w-full text-center py-3 font-chillax rounded-2xl font-medium text-background  shadow-2xl hover:bg-primary hover:text-white duration-700">Lire Plus</Link>
+                                    <Link href={'#'} className=" bg-white border-2 border-white w-full text-center py-3 font-chillax rounded-2xl font-medium text-background  shadow-2xl hover:bg-primary hover:text-white duration-700">Lire Plus</Link>
                                 </div>
-                               
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
+            <Avis/>
         </div>
     )
 }
