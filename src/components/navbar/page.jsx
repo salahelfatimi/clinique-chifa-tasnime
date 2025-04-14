@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Navbar() {
     const navbarRef = useRef(null);
     const linksRef = useRef(null);
-    const [logoSrc, setLogoSrc] = useState('/img/logo_white.png');
+    const [logoSrc, setLogoSrc] = useState('/img/logo_text_white.png');
 
     useEffect(() => {
         const navbar = navbarRef.current;
@@ -16,11 +16,11 @@ export default function Navbar() {
             if (window.scrollY > 50) {
                 gsap.to(navbar, { backgroundColor: "white", duration: 0.1 });
                 gsap.to(links, { color: "black", duration: 0.1 });
-                setLogoSrc('/img/logo.png'); 
+                setLogoSrc('/img/logo_text.png'); 
             } else {
                 gsap.to(navbar, { backgroundColor: "transparent", duration: 0.1 });
                 gsap.to(links, { color: "white", duration: 0.1 });
-                setLogoSrc('/img/logo_white.png'); 
+                setLogoSrc('/img/logo_text_white.png'); 
             }
         };
         window.addEventListener("scroll", handleScroll);
@@ -41,10 +41,10 @@ export default function Navbar() {
     ];
 
     return (
-        <header ref={navbarRef} className="fixed z-50 top-0 left-0 w-full  px-20 py-4  ">
+        <header ref={navbarRef} className="fixed z-50 top-0 left-0 w-full  px-20 py-2 ">
             <div className="hidden lg:block">
                 <div className="flex flex-row gap-4 items-center justify-between container mx-auto">
-                    <Image src={logoSrc} width={500} height={500} className="w-24" alt="Logo" />
+                    <Image src={logoSrc} width={500} height={500} className="w-20" alt="clinique chifa tasnime" title="clinique chifa tasnime"/>
                         <ul ref={linksRef} className="flex space-x-4 text-white">
                             {ItemsNavbar.map((item, index) => (
                                 <Link href={item.link} key={index} className="cursor-pointer text-sm font-medium font-chillax hover:underline duration-500 underline-offset-2">
