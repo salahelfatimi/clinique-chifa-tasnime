@@ -18,7 +18,7 @@ export default function Page() {
             </div>
             <div className=" min-h-screen flex flex-col lg:flex-row justify-between   ">
                 <div className=" lg:w-1/2">
-                    <Image src={`/img/a-propos/img_1.jpg`} alt="clinique chifa tasnime" title="clinique chifa tasnime" className={` object-cover h-[50rem] w-full  `} width={1920} height={1080}/>
+                    <Image src={`/img/a-propos/img_1.jpg`} alt="clinique chifa tasnime" title="clinique chifa tasnime" className={` object-cover h-[30rem] lg:h-full w-full  `} width={1920} height={1080}/>
                 </div>
                 <div className=" bg-background  lg:w-1/2 flex flex-col justify-center items-start z-20 gap-4 max-w-7xl container mx-auto p-10">
                     <h2 className=" text-white font-chillax text-2xl lg:text-4xl  font-bold">Notre vision</h2>

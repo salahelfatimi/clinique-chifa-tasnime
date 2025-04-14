@@ -62,7 +62,7 @@ export default function Page() {
                     <div className=" relative h-[40rem]   flex items-center justify-center  ">
                         {
                             Images.map((ele,index)=>(
-                                <Image key={index} src={`/img/index/change_image/${ele.image}`} alt="clinique chifa tasnime" title="clinique chifa tasnime" className={` object-cover ${change===index?'relative h-[40rem] inset-0 z-10 opacity-100 scale-100  shadow-2xl':'absolute   z-0 opacity-50 scale-50'} ${index % 2 === 0 ? 'rotate-3 ' : '-rotate-3 '}   rounded-3xl transform transition-transform duration-500  `} width={500} height={500}/>
+                                <Image key={index} src={`/img/index/change_image/${ele.image}`} alt="clinique chifa tasnime" title="clinique chifa tasnime" className={` object-cover ${change===index?'relative h-[40rem] w-[30rem] inset-0 z-10 opacity-100 scale-100  shadow-2xl':'absolute   z-0 opacity-50 scale-50'} ${index % 2 === 0 ? 'rotate-3 ' : '-rotate-3 '}   rounded-3xl transform transition-transform duration-500  `} width={1000} height={1000}/>
                             ))
                         }
                     </div>
