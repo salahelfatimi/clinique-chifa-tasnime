@@ -18,8 +18,8 @@ export default function Header() {
                         <Link href={'/prendre-rendez-vous'} className={`bg-primary rounded-full font-chillax font-medium hover:bg-white hover:text-primary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>
                             Prendre rendez-vous                        
                         </Link>
-                        <Link href={'#'} className={`bg-secondary rounded-full font-chillax font-medium hover:bg-white hover:text-secondary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>
-                            Notre Service                       
+                        <Link href={'/specialites'} className={`bg-secondary rounded-full font-chillax font-medium hover:bg-white hover:text-secondary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>
+                            Notre Specialites
                         </Link>
                     </div>
                 </div>
