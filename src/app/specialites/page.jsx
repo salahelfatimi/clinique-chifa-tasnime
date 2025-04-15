@@ -5,6 +5,38 @@ import Avis from "@/pages/index/avis";
 import LogoScroll from "@/tools/logoScroll";
 import React from "react";
 
+
+export async function generateMetadata() {
+    return {
+      title: "Soins Médicaux de Qualité à Marrakech",
+      description: "Découvrez les services médicaux de la Clinique Chifa Tasnime à Marrakech. Spécialistes en cardiologie, imagerie médicale, urgences et bien plus. Prise en charge personnalisée et soins de qualité.",
+      alternates: {
+        canonical: "/specialites",
+      },
+      openGraph: {
+        title: "Soins Médicaux de Qualité à Marrakech",
+        description: "Découvrez les services médicaux de la Clinique Chifa Tasnime à Marrakech. Spécialistes en cardiologie, imagerie médicale, urgences et bien plus. Prise en charge personnalisée et soins de qualité.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/specialites`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
 export default function Nos_services(){
     return(
         <div>

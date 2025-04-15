@@ -8,7 +8,7 @@ export async function generateMetadata() {
       canonical: "/",
     },
     openGraph: {
-      title: "Clinique Chifa Tasnime",
+      title: "Soins Médicaux de Qualité à Marrakech",
       description: "Découvrez des interventions chirurgicales de haute précision à la Clinique Chifa Tasnime, avec des technologies avancées et des experts dédiés pour des soins optimaux.",
       url: `${process.env.NEXT_PUBLIC_BASE_URL}/`,
       robots: {

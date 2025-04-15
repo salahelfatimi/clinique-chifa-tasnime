@@ -2,6 +2,39 @@ import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
 
+
+export async function generateMetadata() {
+    return {
+      title: "Interventions Chirurgicales de Haute Précision ",
+      description: "Découvrez nos interventions chirurgicales de haute précision à la Clinique Chifa Tasnime à Marrakech. Des soins de qualité, des technologies avancées et des chirurgiens experts pour garantir votre sécurité et rétablissement.",
+      alternates: {
+        canonical: "/interventions-chirurgicales-haute-precision",
+      },
+      openGraph: {
+        title: "Interventions Chirurgicales de Haute Précision ",
+        description: "Découvrez nos interventions chirurgicales de haute précision à la Clinique Chifa Tasnime à Marrakech. Des soins de qualité, des technologies avancées et des chirurgiens experts pour garantir votre sécurité et rétablissement.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/interventions-chirurgicales-haute-precision`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
+
 export default function InterventionsChirurgicales() {
     return (
         <div className="">

@@ -3,6 +3,37 @@ import { Faq } from "../data/faq";
 import { ShieldQuestion } from "lucide-react";
 import Link from "next/link";
 
+export async function generateMetadata() {
+    return {
+      title: "Réponses à vos interrogations médicales",
+      description: "Consultez la Foire aux Questions de la Clinique Chifa Tasnime à Marrakech pour obtenir des réponses à vos questions sur nos services, prises en charge, rendez-vous et plus encore.",
+      alternates: {
+        canonical: "/foire-aux-questions",
+      },
+      openGraph: {
+        title: "Réponses à vos interrogations médicales",
+        description: "Consultez la Foire aux Questions de la Clinique Chifa Tasnime à Marrakech pour obtenir des réponses à vos questions sur nos services, prises en charge, rendez-vous et plus encore.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/foire-aux-questions`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
 export default function Page() {
     return(
         <div>

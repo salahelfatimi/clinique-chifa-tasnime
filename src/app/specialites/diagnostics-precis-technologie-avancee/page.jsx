@@ -2,6 +2,38 @@ import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
 
+export async function generateMetadata() {
+    return {
+      title: "Diagnostics Précis & Technologie Avancée",
+      description: "Des diagnostics fiables et rapides grâce à des équipements médicaux de pointe à la Clinique Chifa Tasnime à Marrakech.",
+      alternates: {
+        canonical: "/diagnostics-precis-technologie-avancee",
+      },
+      openGraph: {
+        title: "Diagnostics Précis & Technologie Avancée",
+        description: "Des diagnostics fiables et rapides grâce à des équipements médicaux de pointe à la Clinique Chifa Tasnime à Marrakech.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/diagnostics-precis-technologie-avancee`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
+
 export default function Cardiologie_interventionnelle_chirurgie_cardio_vasculaire(){
     return(
         <div className="">

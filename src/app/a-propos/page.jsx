@@ -5,6 +5,37 @@ import SactionNumbers from "@/pages/index/sactionNumbers";
 import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 
+export async function generateMetadata() {
+    return {
+      title: "Notre Histoire et Expertise Médicale à Marrakech",
+      description: "La Clinique Chifa Tasnime à Marrakech offre des soins médicaux de qualité, avec une équipe d'experts et des technologies avancées pour votre bien-être.",
+      alternates: {
+        canonical: "/a-propos",
+      },
+      openGraph: {
+        title: "Notre Histoire et Expertise Médicale à Marrakech",
+        description: "La Clinique Chifa Tasnime à Marrakech offre des soins médicaux de qualité, avec une équipe d'experts et des technologies avancées pour votre bien-être.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/a-propos`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+  };
+
 export default function Page() {
     return(
         <div>

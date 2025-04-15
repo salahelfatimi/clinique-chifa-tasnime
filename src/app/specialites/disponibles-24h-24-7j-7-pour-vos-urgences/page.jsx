@@ -2,6 +2,40 @@ import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
 
+
+
+export async function generateMetadata() {
+    return {
+      title: "Interventions Chirurgicales de Haute Précision ",
+      description: "La Clinique Chifa Tasnime à Marrakech est disponible 24h/24 et 7j/7 pour toutes vos urgences médicales. Soins rapides et efficaces, équipe médicale prête à intervenir à tout moment pour votre bien-être.",
+      alternates: {
+        canonical: "/disponibles-24h-24-7j-7-pour-vos-urgences",
+      },
+      openGraph: {
+        title: "Interventions Chirurgicales de Haute Précision ",
+        description: "La Clinique Chifa Tasnime à Marrakech est disponible 24h/24 et 7j/7 pour toutes vos urgences médicales. Soins rapides et efficaces, équipe médicale prête à intervenir à tout moment pour votre bien-être.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/disponibles-24h-24-7j-7-pour-vos-urgences`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
+
 export default function Cardiologie_interventionnelle_chirurgie_cardio_vasculaire(){
     return(
         <div className="">

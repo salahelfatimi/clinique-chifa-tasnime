@@ -2,6 +2,37 @@ import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
 
+export async function generateMetadata() {
+    return {
+      title: "Soins pour Vos Os et Articulations",
+      description: "À la Clinique Chifa Tasnime à Marrakech, nous offrons des soins spécialisés pour vos os et articulations, en utilisant des technologies de pointe et des techniques avancées pour garantir votre bien-être.",
+      alternates: {
+        canonical: "/soins-os-articulations",
+      },
+      openGraph: {
+        title: "Soins pour Vos Os et Articulations",
+        description: "À la Clinique Chifa Tasnime à Marrakech, nous offrons des soins spécialisés pour vos os et articulations, en utilisant des technologies de pointe et des techniques avancées pour garantir votre bien-être.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/soins-os-articulations`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
 export default function Soins_pour_vos_os_et_articulations() {
     return (
         <div className="">

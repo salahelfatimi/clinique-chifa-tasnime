@@ -2,6 +2,37 @@ import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
 
+export async function generateMetadata() {
+    return {
+      title: "Cardiologie & Chirurgie Cardio-Vasculaire ",
+      description: "Soins experts du cœur à Marrakech : cardiologie interventionnelle et chirurgie cardio-vasculaire à la Clinique Chifa Tasnime.",
+      alternates: {
+        canonical: "/cardiologie-interventionnelle-chirurgie-cardio-vasculaire",
+      },
+      openGraph: {
+        title: "Cardiologie & Chirurgie Cardio-Vasculaire ",
+        description: "Soins experts du cœur à Marrakech : cardiologie interventionnelle et chirurgie cardio-vasculaire à la Clinique Chifa Tasnime.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/cardiologie-interventionnelle-chirurgie-cardio-vasculaire`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
 export default function Cardiologie_interventionnelle_chirurgie_cardio_vasculaire(){
     return(
         <div className="">

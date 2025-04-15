@@ -2,6 +2,38 @@ import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
 
+
+export async function generateMetadata() {
+    return {
+      title: "Votre Cœur entre de Bonnes Mains | Soins Cardiovasculaires à Marrakech",
+      description: "Profitez de soins cardiovasculaires de haute qualité à la Clinique Chifa Tasnime à Marrakech. Nos experts cardiologues vous assurent des soins personnalisés et un suivi optimal pour la santé de votre cœur.",
+      alternates: {
+        canonical: "/votre-coeur-entre-de-bonnes-mains",
+      },
+      openGraph: {
+        title: "Votre Cœur entre de Bonnes Mains | Soins Cardiovasculaires à Marrakech",
+        description: "Profitez de soins cardiovasculaires de haute qualité à la Clinique Chifa Tasnime à Marrakech. Nos experts cardiologues vous assurent des soins personnalisés et un suivi optimal pour la santé de votre cœur.",
+        url: `${process.env.NEXT_PUBLIC_BASE_URL}/votre-coeur-entre-de-bonnes-mains`,
+        robots: {
+          index: true,
+          follow: true,
+        },
+        siteName: "Clinique Chifa Tasnime",
+        images: [
+          {
+            url: `/opengraph-image.jpg`,
+            secureUrl: `/opengraph-image.jpg`,
+            width: 1200,
+            height: 675,
+            alt: "Clinique Chifa Tasnime",
+          }
+        ],
+        type: "website",
+  
+      },
+    }
+};
+
 export default function VotreCoeur() {
     return (
         <div className="">

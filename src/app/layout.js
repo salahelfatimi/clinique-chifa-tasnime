@@ -4,7 +4,7 @@ import Navbar from "@/components/navbar/page";
 
 
 export const metadata = {
-  title: "Clinique Chifa Tasnime",
+  title: {  template: "Clinique Chifa Tasnime | %s" },
   description: "Découvrez des interventions chirurgicales de haute précision à la Clinique Chifa Tasnime, avec des technologies avancées et des experts dédiés pour des soins optimaux.",
   metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
 
