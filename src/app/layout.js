@@ -5,7 +5,9 @@ import Navbar from "@/components/navbar/page";
 
 export const metadata = {
   title: "Clinique Chifa Tasnime",
-  description: "Clinique Chifa Tasnime - Votre santé, notre priorité",
+  description: "Découvrez des interventions chirurgicales de haute précision à la Clinique Chifa Tasnime, avec des technologies avancées et des experts dédiés pour des soins optimaux.",
+  metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
+
 };
 
 export default function RootLayout({ children }) {
