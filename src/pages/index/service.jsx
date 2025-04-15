@@ -42,7 +42,7 @@ export default function Service() {
                     </div>
                 ))}
             </div>
-            <Link href={'#'} className=" bg-background text-white font-chillax font-bold px-6 py-3 rounded-full mt-4">Découvrir tous nos services</Link>
+            <Link href={'/specialites'} className=" bg-background hover:bg-primary duration-700 text-white font-chillax font-bold px-6 py-3 rounded-full mt-4">Découvrir tous nos services</Link>
         </div>
     )
 }

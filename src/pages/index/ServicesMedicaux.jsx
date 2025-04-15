@@ -41,9 +41,7 @@ export default function ServicesMedicaux() {
                 <div className="lg:w-1/2 text-left space-y-4 flex flex-col items-start justify-center min-h-96 gap-4 bg-white rounded-3xl shadow-lg p-6 py-4">
                   <h3 className="text-3xl text-background uppercase font-zodiak">{service.title}</h3>
                   <p className="text-gray-700 font-chillax">{service.description}</p>
-                  <Link href={"#"} className="bg-background text-white px-6 py-3 w-full rounded-full hover:bg-primary font-chillax transition text-center">
-                    Voir plus
-                  </Link>
+                  
                 </div>
               </div>
             </div>
