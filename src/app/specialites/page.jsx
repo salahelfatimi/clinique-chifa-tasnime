@@ -23,8 +23,8 @@ export default function Nos_services(){
                     <div className="flex flex-col  ">
                         {PageService.map((item, index) => (
                             <div key={index} className="flex flex-col lg:even:flex-row lg:odd:flex-row-reverse odd:bg-secondary even:bg-primary  items-center justify-center  ">
-                                <div className="lg:w-1/2 w-full">
-                                    <Image src={item.imageUrl} width={1920} height={1080} className=" w-full h-full" title={item.title} alt={item.title}/>
+                                <div className="lg:w-1/2 h-[40rem] w-full">
+                                    <Image src={item.imageUrl} width={1920} height={1080} className=" w-full h-full object-cover " title={item.title} alt={item.title}/>
                                 </div>
                                 <div className="flex flex-col gap-6 lg:w-1/2 p-8">
                                     <h3 className=" text-2xl lg:text-4xl uppercase font-zodiak text-center mb-4 text-white">  {item.title}</h3>

@@ -52,8 +52,8 @@ export default function Navbar() {
     const ItemsNavbar = [
         { name: 'Accueil', link: '/' },
         { name: 'Specialites', link: '/specialites' },
-        { name: 'FAQ', link: '/foire-aux-questions' },
         { name: 'À propos', link: '/a-propos' },
+        { name: 'Foire Aux Questions', link: '/foire-aux-questions' },
         { name: 'Contactez-nous', link: '/contactez-nous' },
     ];
 
