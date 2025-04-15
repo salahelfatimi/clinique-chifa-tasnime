@@ -86,7 +86,7 @@ export default function Navbar() {
                     </button>
                     <ul className="flex flex-col space-y-6 text-black text-center">
                         {ItemsNavbar.map((item, index) => (
-                            <Link href={item.link} key={index} className="cursor-pointer font-medium font-chillax hover:underline duration-500 underline-offset-2">
+                            <Link onClick={toggleMobileMenu} href={item.link} key={index} className="cursor-pointer font-medium font-chillax hover:underline duration-500 underline-offset-2">
                                 {item.name}
                             </Link>
                         ))}
