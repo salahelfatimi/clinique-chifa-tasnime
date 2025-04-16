@@ -2,7 +2,7 @@ import Page from "@/pages/index/page";
 
 export async function generateMetadata() {
   return {
-    title: "Soins Médicaux de Qualité à Marrakech",
+    title: "Clinique Chifa Tasnime | Soins Médicaux de Qualité à Marrakech",
     description: "Découvrez des interventions chirurgicales de haute précision à la Clinique Chifa Tasnime, avec des technologies avancées et des experts dédiés pour des soins optimaux.",
     alternates: {
       canonical: "/",
