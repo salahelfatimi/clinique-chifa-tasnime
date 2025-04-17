@@ -19,7 +19,7 @@ export default function Header() {
                             Prendre rendez-vous                        
                         </Link>
                         <Link href={'/specialites'} className={`bg-secondary rounded-full font-chillax font-medium hover:bg-white hover:text-secondary duration-700  text-white text-xl font-boska px-6 py-3 mt-4`}>
-                            Notre Specialites
+                            Nos Spécialités
                         </Link>
                     </div>
                 </div>
