@@ -5,6 +5,7 @@ import Link from "next/link";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect, useRef } from "react";
+import BackButton from "@/tools/backButton";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Service() {
@@ -33,13 +34,13 @@ export default function Service() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 p-4 justify-center  ">
                 
                 {services.map((service, index) => (
-                    <div key={index} ref={(el) => (serviceRefs.current[index] = el)} className="font-chillax last:col-start-1 lg:last:col-start-2  bg-white border-background border-2 shadow-lg rounded-3xl p-4 flex flex-col items-center text-center ">
+                    <Link href={`/specialites/${service.url}`} key={index} ref={(el) => (serviceRefs.current[index] = el)} className="font-chillax last:col-start-1 lg:last:col-start-2 group hover:bg-primary duration-700 bg-white hover:border-primary border-background border-2 shadow-lg rounded-3xl p-4 flex flex-col items-center text-center ">
                         <div className="mb-4  rounded-full p-3 flex items-center justify-center w-24 h-24">
                             <Image src={service.image} width={500} height={500} alt="clinique chifa tasnime" title="clinique chifa tasnime"/>
                         </div>
-                        <h3 className="text-xl text-background uppercase font-zodiak">{service.title}</h3>
-                        <p className="text-black ">{service.description}</p>
-                    </div>
+                        <h3 className="text-xl group-hover:text-white text-background uppercase font-zodiak">{service.title}</h3>
+                        <p className="text-black group-hover:text-white">{service.description}</p>
+                    </Link>
                 ))}
             </div>
             <Link href={'/specialites'} className=" bg-background hover:bg-primary duration-700 text-white font-chillax font-bold px-6 py-3 rounded-full mt-4">Découvrir tous nos services</Link>

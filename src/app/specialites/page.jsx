@@ -2,8 +2,9 @@ import Image from "next/image";
 import { PageService } from "../data/pageService";
 import Link from "next/link";
 import Avis from "@/pages/index/avis";
-import LogoScroll from "@/tools/logoScroll";
 import React from "react";
+import { ChevronLeft } from "lucide-react";
+import BackButton from "@/tools/backButton";
 
 
 export async function generateMetadata() {
@@ -40,6 +41,7 @@ export async function generateMetadata() {
 export default function Nos_services(){
     return(
         <div>
+            <BackButton/>
             <div className="h-screen relative ">
                 <Image src={'/img/specialites/img.jpg'} alt="clinique chifa tasnime" title="clinique chifa tasnime" width={1920} height={1080}  className="object-cover h-full w-full object-center" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
@@ -61,7 +63,7 @@ export default function Nos_services(){
                                 <div className="flex flex-col gap-6 lg:w-1/2 p-8">
                                     <h3 className=" text-2xl lg:text-4xl uppercase font-zodiak text-center mb-4 text-white">  {item.title}</h3>
                                     <p className="text-white text-center font-chillax">{item.description}</p>
-                                    <Link href={`/specialites/${item.url}`} className=" bg-white border-2 border-white w-full text-center py-3 font-chillax rounded-2xl font-medium text-background  shadow-2xl hover:bg-primary hover:text-white duration-700">Lire Plus</Link>
+                                    <Link href={`/specialites/${item.url}`} className=" bg-white border-2 border-white w-full text-center py-3 font-chillax rounded-2xl font-medium text-background  shadow-2xl hover:bg-transparent hover:text-white duration-700">Lire Plus</Link>
                                 </div>
                             </div>
                         ))}

@@ -1,6 +1,7 @@
 import LogoScroll from "@/tools/logoScroll";
 import Image from "next/image";
 import Faq from "./faq";
+import BackButton from "@/tools/backButton";
 
 export async function generateMetadata() {
     return {
@@ -37,6 +38,7 @@ export async function generateMetadata() {
 export default function Cardiologie_interventionnelle_chirurgie_cardio_vasculaire(){
     return(
         <div className="">
+            <BackButton/>
             <div className="h-screen relative ">
                 <Image src={'/img/specialites/service/diagnostics-precis-technologie-avancee.png'} alt="FAQ" fill className="object-cover object-center" />
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50"></div>
