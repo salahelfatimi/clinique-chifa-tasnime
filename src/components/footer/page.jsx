@@ -14,6 +14,8 @@ export default function Footer(){
                         <div className="flex gap-6">
                             <Link href={'https://www.instagram.com/clinique_chifa_tasnime'} target="_blank"><Instagram size={30} className=" stroke-[#fff]" /></Link>
                             <Link href={'https://www.facebook.com/profile.php?id=61574572105547'} target="_blank"><Facebook size={30} className=" stroke-[#fff]" /></Link>
+                            <Link href={'https://www.linkedin.com/in/clinique-chifa-de-marrakech-3a524b70/'} target="_blank"><Linkedin size={30} className=" stroke-[#fff]" /></Link>
+
                             {/* <Linkedin size={30} className=" stroke-[#fff]" /> */}
 
                         </div>
