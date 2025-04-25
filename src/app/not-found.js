@@ -36,8 +36,8 @@ export async function generateMetadata() {
 export default function NotFound() {
   return (
     <>
-      <div className=" container flex flex-col gap-10 items-center justify-center  h-screen  bg-background   inset-0 ">
-        <Image src={'/img/logo_text_white.png'} className="w-44" width={500} height={500}/>
+      <div className="  flex flex-col gap-10 items-center justify-center  h-screen w-full  bg-background   inset-0 ">
+        <Image src={'/img/logo_text_white.png'} className="w-44" width={500} height={500} alt="clinique chifa tasnime" title="clinique chifa tasnime"/>
         <p className=" font-bold text-2xl flex items-center gap-2 flex-col text-center justify-center text-white">
           Il semble que cette page n&apos;existe pas
         </p>
