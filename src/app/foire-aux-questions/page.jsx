@@ -11,7 +11,7 @@ export async function generateMetadata() {
         canonical: "/foire-aux-questions",
       },
       openGraph: {
-        title: "Réponses à vos interrogations médicales",
+        title: "Clinique Chifa Tasnime | Réponses à vos interrogations médicales",
         description: "Consultez la Foire aux Questions de la Clinique Chifa Tasnime à Marrakech pour obtenir des réponses à vos questions sur nos services, prises en charge, rendez-vous et plus encore.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/foire-aux-questions`,
         robots: {

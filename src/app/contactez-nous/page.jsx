@@ -8,7 +8,7 @@ export async function generateMetadata() {
         canonical: "/contactez-nous",
       },
       openGraph: {
-        title: "Contactez-nous",
+        title: "Clinique Chifa Tasnime | Contactez-nous",
         description: "Prenez contact avec la Clinique Chifa Tasnime à Marrakech pour toute demande de renseignements, prise de rendez-vous ou questions sur nos services de santé. Notre équipe vous répond rapidement.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/contactez-nous`,
         robots: {

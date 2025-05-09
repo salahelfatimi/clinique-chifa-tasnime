@@ -12,7 +12,7 @@ export async function generateMetadata() {
         canonical: "/interventions-chirurgicales-haute-precision",
       },
       openGraph: {
-        title: "Interventions Chirurgicales de Haute Précision ",
+        title: "Clinique Chifa Tasnime | Interventions Chirurgicales de Haute Précision ",
         description: "Découvrez nos interventions chirurgicales de haute précision à la Clinique Chifa Tasnime à Marrakech. Des soins de qualité, des technologies avancées et des chirurgiens experts pour garantir votre sécurité et rétablissement.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/interventions-chirurgicales-haute-precision`,
         robots: {

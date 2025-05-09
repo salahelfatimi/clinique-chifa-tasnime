@@ -13,7 +13,7 @@ export async function generateMetadata() {
         canonical: "/disponibles-24h-24-7j-7-pour-vos-urgences",
       },
       openGraph: {
-        title: "Interventions Chirurgicales de Haute Précision ",
+        title: "Clinique Chifa Tasnime | Interventions Chirurgicales de Haute Précision ",
         description: "La Clinique Chifa Tasnime à Marrakech est disponible 24h/24 et 7j/7 pour toutes vos urgences médicales. Soins rapides et efficaces, équipe médicale prête à intervenir à tout moment pour votre bien-être.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/disponibles-24h-24-7j-7-pour-vos-urgences`,
         robots: {

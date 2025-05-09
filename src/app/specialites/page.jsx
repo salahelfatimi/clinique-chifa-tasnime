@@ -15,7 +15,7 @@ export async function generateMetadata() {
         canonical: "/specialites",
       },
       openGraph: {
-        title: "Soins Médicaux de Qualité à Marrakech",
+        title: "Clinique Chifa Tasnime | Soins Médicaux de Qualité à Marrakech",
         description: "Découvrez les services médicaux de la Clinique Chifa Tasnime à Marrakech. Spécialistes en cardiologie, imagerie médicale, urgences et bien plus. Prise en charge personnalisée et soins de qualité.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/specialites`,
         robots: {

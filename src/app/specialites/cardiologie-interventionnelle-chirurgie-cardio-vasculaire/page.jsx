@@ -11,7 +11,7 @@ export async function generateMetadata() {
         canonical: "/cardiologie-interventionnelle-chirurgie-cardio-vasculaire",
       },
       openGraph: {
-        title: "Cardiologie & Chirurgie Cardio-Vasculaire ",
+        title: "Clinique Chifa Tasnime | Cardiologie & Chirurgie Cardio-Vasculaire ",
         description: "Soins experts du cœur à Marrakech : cardiologie interventionnelle et chirurgie cardio-vasculaire à la Clinique Chifa Tasnime.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/cardiologie-interventionnelle-chirurgie-cardio-vasculaire`,
         robots: {

@@ -11,7 +11,7 @@ export async function generateMetadata() {
         canonical: "/soins-os-articulations",
       },
       openGraph: {
-        title: "Soins pour Vos Os et Articulations",
+        title: "Clinique Chifa Tasnime | Soins pour Vos Os et Articulations",
         description: "À la Clinique Chifa Tasnime à Marrakech, nous offrons des soins spécialisés pour vos os et articulations, en utilisant des technologies de pointe et des techniques avancées pour garantir votre bien-être.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/soins-os-articulations`,
         robots: {

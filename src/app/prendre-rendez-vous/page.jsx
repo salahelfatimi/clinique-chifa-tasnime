@@ -9,7 +9,7 @@ export async function generateMetadata() {
         canonical: "/prendre-rendez-vous",
       },
       openGraph: {
-        title: "Prendre Rendez-vous",
+        title: "Clinique Chifa Tasnime | Prendre Rendez-vous",
         description: "Prenez rendez-vous en ligne à la Clinique Chifa Tasnime à Marrakech pour nos consultations médicales. Facile, rapide et sécurisé. Choisissez votre spécialité et réservez aujourd’hui !",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/prendre-rendez-vous`,
         robots: {

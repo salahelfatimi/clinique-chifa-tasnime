@@ -13,7 +13,7 @@ export async function generateMetadata() {
         canonical: "/a-propos",
       },
       openGraph: {
-        title: "Notre Histoire et Expertise Médicale à Marrakech",
+        title: "Clinique Chifa Tasnime | Notre Histoire et Expertise Médicale à Marrakech",
         description: "La Clinique Chifa Tasnime à Marrakech offre des soins médicaux de qualité, avec une équipe d'experts et des technologies avancées pour votre bien-être.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/a-propos`,
         robots: {

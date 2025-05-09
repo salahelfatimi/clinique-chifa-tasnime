@@ -11,7 +11,7 @@ export async function generateMetadata() {
         canonical: "/diagnostics-precis-technologie-avancee",
       },
       openGraph: {
-        title: "Diagnostics Précis & Technologie Avancée",
+        title: "Clinique Chifa Tasnime | Diagnostics Précis & Technologie Avancée",
         description: "Des diagnostics fiables et rapides grâce à des équipements médicaux de pointe à la Clinique Chifa Tasnime à Marrakech.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/diagnostics-precis-technologie-avancee`,
         robots: {

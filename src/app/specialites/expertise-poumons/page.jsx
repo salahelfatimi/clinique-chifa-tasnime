@@ -12,7 +12,7 @@ export async function generateMetadata() {
         canonical: "/expertise-poumons",
       },
       openGraph: {
-        title: "Expertise Poumons ",
+        title: "Clinique Chifa Tasnime | Expertise Poumons ",
         description: "Découvrez notre expertise pulmonaire à la Clinique Chifa Tasnime à Marrakech. Soins de qualité, diagnostics avancés et traitement personnalisé pour vos affections pulmonaires. Prenez soin de vos poumons avec nos experts.",
         url: `${process.env.NEXT_PUBLIC_BASE_URL}/expertise-poumons`,
         robots: {
