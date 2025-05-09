@@ -25,6 +25,7 @@ export default function Prendre_rendez_vous_page(){
             },
             body: JSON.stringify(formData),
           });
+          console.log(response);
           if (response.status === 200) {
             setFormData({
                 fullName: "",
@@ -55,12 +56,12 @@ export default function Prendre_rendez_vous_page(){
                     <form onSubmit={sendEmail} className=" flex flex-col lg:flex-row justify-center items-center gap-10 w-full ">
                         <div className=" flex flex-col items-start gap-4 w-full">
                             <div className=" flex flex-col lg:flex-row justify-between items-center gap-4 w-full">
-                                <input type="text" name="fullName" onChange={handleInputChange}  className={` ${!formData.fullName && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Nom complet" />
-                                <input type="text" name="email" onChange={handleInputChange}  className={`border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Email"/>
+                                <input type="text" name="fullName" value={formData.fullName} onChange={handleInputChange}  className={` ${!formData.fullName && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Nom complet" />
+                                <input type="text" name="email" value={formData.email} onChange={handleInputChange}  className={`border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Email"/>
                             </div>
-                            <input type="text" name="phone" onChange={handleInputChange}  className={` ${!formData.phone && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Numéro de téléphone"/>
+                            <input type="text" name="phone" value={formData.phone} onChange={handleInputChange}  className={` ${!formData.phone && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Numéro de téléphone"/>
                             <div className=" flex flex-col lg:flex-row justify-between items-center gap-4 w-full">
-                                <select name="service" onChange={handleInputChange}  className={` ${!formData.service && validation && "border-red-500 placeholder:text-red-500 "}  border-2 border-primary w-full h-12 rounded-4xl px-6 text-white font-chillax  bg-background`}>
+                                <select name="service" value={formData.service} onChange={handleInputChange}  className={` ${!formData.service && validation && "border-red-500 placeholder:text-red-500 "}  border-2 border-primary w-full h-12 rounded-4xl px-6 text-white font-chillax  bg-background`}>
                                     <option value="" selected>Select Service</option>
                                     <option value="Chirurgie">Chirurgie</option>
                                     <option value="Cardiologie et Rythmologie">Cardiologie et Rythmologie</option>
@@ -70,9 +71,9 @@ export default function Prendre_rendez_vous_page(){
                                     <option value="Cardiologie interventionnelle & chirurgie cardiovasculaire">Cardiologie interventionnelle & chirurgie cardiovasculaire</option>
                                     <option value="Autre">Autre ..</option>
                                 </select>
-                                <input onChange={handleInputChange} type="date" name="date" className={` ${!formData.date && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl px-6 text-white font-chillax`} placeholder="Date et heure souhaitées"/>
+                                <input onChange={handleInputChange} value={formData.date} type="date" name="date" className={` ${!formData.date && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl px-6 text-white font-chillax`} placeholder="Date et heure souhaitées"/>
                             </div>
-                            <textarea onChange={handleInputChange} rows={6} className=" border-2 border-primary w-full  rounded-4xl p-6 text-white placeholder:text-white font-chillax" placeholder="Commentaire" name="comment"></textarea>
+                            <textarea onChange={handleInputChange} value={formData.comment} rows={6} className=" border-2 border-primary w-full  rounded-4xl p-6 text-white placeholder:text-white font-chillax" placeholder="Commentaire" name="comment"></textarea>
                             <button disabled={isLoading} type="submit" className=" cursor-pointer duration-700 bg-primary hover:bg-white hover:text-primary text-white py-4 w-full rounded-full font-chillax font-medium   ">{isLoading? "Envoi en cours...": "Envoyer ma demande"}</button>
                         </div>
                         
