@@ -1,3 +1,3 @@
 User-Agent: *
 Allow:*
-Sitemap:https://clinique-chifa-tasnime.vercel.app/sitemap.xml
+Sitemap:https://www.clinique-chifa-marrakech.com/sitemap.xml
