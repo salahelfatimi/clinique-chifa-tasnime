@@ -72,7 +72,7 @@ export default function Prendre_rendez_vous_page(){
                                 </select>
                                 <input onChange={handleInputChange} type="date" name="date" className={` ${!formData.date && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl px-6 text-white font-chillax`} placeholder="Date et heure souhaitées"/>
                             </div>
-                            <textarea onChange={handleInputChange} rows={6} className=" border-2 border-primary w-full  rounded-4xl p-6 placeholder:text-white font-chillax" placeholder="Commentaire" name="comment"></textarea>
+                            <textarea onChange={handleInputChange} rows={6} className=" border-2 border-primary w-full  rounded-4xl p-6 text-white placeholder:text-white font-chillax" placeholder="Commentaire" name="comment"></textarea>
                             <button disabled={isLoading} type="submit" className=" cursor-pointer duration-700 bg-primary hover:bg-white hover:text-primary text-white py-4 w-full rounded-full font-chillax font-medium   ">{isLoading? "Envoi en cours...": "Envoyer ma demande"}</button>
                         </div>
                         

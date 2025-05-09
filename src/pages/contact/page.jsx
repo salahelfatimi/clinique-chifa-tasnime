@@ -58,7 +58,7 @@ export default function Contact() {
                                 <input type="text" name="email" onChange={handleInputChange}  id="" className={` ${!formData.email && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Email"/>
                             </div>
                             <input type="text" name="phone" onChange={handleInputChange}  id="" className={` ${!formData.phone && validation && "border-red-500 placeholder:text-red-500 "} border-2 border-primary w-full h-12 rounded-4xl pl-6 placeholder:text-white font-chillax`} placeholder="Numéro de téléphone"/>
-                            <textarea  rows={6} name="comment" onChange={handleInputChange}  className={` border-2 border-primary w-full  rounded-4xl p-6 placeholder:text-white font-chillax`} placeholder="Commentaire Ou Question" id=""></textarea>
+                            <textarea  rows={6} name="comment" onChange={handleInputChange}  className={` text-white border-2 border-primary w-full  rounded-4xl p-6 placeholder:text-white font-chillax`} placeholder="Commentaire Ou Question" id=""></textarea>
                             <button  disabled={isLoading} type="submit" className=" cursor-pointer duration-700 bg-primary hover:bg-white hover:text-primary text-white py-4 w-full rounded-full font-chillax font-medium  ">{isLoading? "Envoi en cours...": "Envoyer"}</button>
                         </div>
                         <div className=" lg:w-1/2 flex flex-col gap-3 items-start justify-start">
@@ -73,9 +73,8 @@ export default function Contact() {
                             </div>
                             <div className=" flex flex-col justify-start items-start w-full gap-4" >
                                 <h3 className=" text-primary font-medium  border-2 w-full text-start p-2 font-chillax flex gap-2 rounded-4xl"><Mail /> E-mail</h3>
-                                <Link href={'mail:Contact@clinique-chifa-tasnime.com'} className=" text-white text-sm border-primary font-zodiak border-l-4 pl-4 underline underline-offset-2">Contact@clinique-chifa-tasnime.com</Link>
+                                <Link href={'mail:contact@clinique-chifa-tasnime.com'} className=" text-white text-sm border-primary font-zodiak border-l-4 pl-4 underline underline-offset-2">Contact@clinique-chifa-tasnime.com</Link>
                             </div>
-                        
                         </div>
                     </div>
                 </form>
